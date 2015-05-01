@@ -85,5 +85,8 @@ public interface IXMLExchangeGlobals {
     String ATTRIBUTE_FONTSIZE = "size";
     String ATTRIBUTE_FONTSTYLE = "style";
     String ATTRIBUTE_LINEWIDTH = "lineWidth";
+
+    String NODE_TYPE_GROUP = "group";
+    String NODE_TYPE_TEXT = "text";
     
 }

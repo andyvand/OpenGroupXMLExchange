@@ -652,6 +652,9 @@ public class XMLModelExporter implements IXMLExchangeGlobals {
         // Bounds
         writeAbsoluteBounds(group, nodeElement);
         
+        // Type
+        nodeElement.setAttribute(ATTRIBUTE_TYPE, NODE_TYPE_GROUP);
+        
         // Name
         writeTextToElement(group.getName(), nodeElement, ELEMENT_LABEL);
         
@@ -685,6 +688,9 @@ public class XMLModelExporter implements IXMLExchangeGlobals {
         // Bounds
         writeAbsoluteBounds(note, nodeElement);
         
+        // Type
+        nodeElement.setAttribute(ATTRIBUTE_TYPE, NODE_TYPE_TEXT);
+
         // Text
         writeTextToElement(note.getContent(), nodeElement, ELEMENT_LABEL);
         
